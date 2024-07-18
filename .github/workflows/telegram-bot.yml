@@ -4,9 +4,12 @@ name: Telegram Bot
 #   schedule:
 #     - cron: '0 15 * * *'  # Запуск каждый день в 18:00 по московскому времени (UTC+3)
 
+# on:
+#   schedule:
+#     - cron: '* * * * *'  # Запуск каждую минуту для проверки
+
 on:
-  schedule:
-    - cron: '* * * * *'  # Запуск каждую минуту для проверки
+  workflow_dispatch:
     
 jobs:
   run:
