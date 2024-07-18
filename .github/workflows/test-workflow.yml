@@ -1,12 +1,13 @@
 name: Test Workflow
 
 on:
-  schedule:
-    - cron: '* * * * *'  # Запуск каждую минуту для проверки
+  # schedule:
+  #   - cron: '* * * * *'  # Запуск каждую минуту для проверки
   workflow_dispatch:  # Позволяет запускать workflow вручную
 
 jobs:
   test:
+    name: test
     runs-on: ubuntu-latest
 
     steps:
